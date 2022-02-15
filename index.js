@@ -21,10 +21,10 @@ for (let i=0; i < openWindow.length; i++) {
 }
 
 // hamburger implementation
-const menuItems = document.getElementById("menu");
+const menuItems = document.getElementsByClassName("menu");
 const hamburgerMenu = document.getElementsByClassName("hamburger");
 
 hamburgerMenu[0].addEventListener("click", () => {
-    menuItems.classList.toggle("visible");
+    menuItems[0].classList.toggle("visible");
     hamburgerMenu[0].classList.toggle("change");
 })
